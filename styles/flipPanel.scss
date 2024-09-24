@@ -1,0 +1,191 @@
+.flip-panel {
+  // arrow links
+  .project-link {
+    svg {
+      width: 100px;
+      height: 50px;
+      fill: #38bdf8;
+      transition: transform 0.3s ease, fill 0.3s ease;
+    }
+    &:hover svg {
+      transform: scale(1.1);
+    }
+  }
+
+  .cc-flip-panel-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    border-radius: 0.5rem;
+    padding: 20px;
+
+    .cc-flip-panel-inner-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      transition: transform 0.8s;
+    }
+
+    .cc-content-wrapper {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+
+      a {
+        transition: all 0.2s ease;
+      }
+    }
+
+    .cc-inner-wrapper {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: inherit;
+      transition: border-radius 0.8s ease-in-out;
+      z-index: 2;
+    }
+
+    // .cc-front-panel-container {
+    //   background: linear-gradient(
+    //     135deg,
+    //     rgba(0, 0, 0, 1) 0%,
+    //     rgba(5, 46, 22, 1) 48%,
+    //     rgba(0, 0, 0, 1) 100%
+    //   );
+    // }
+
+    .cc-front-panel-container {
+        .cc-front-panel-inner-wrapper {
+          background-color: rgba(0, 0, 0, 80%);
+        }
+      }
+
+    .cc-back-panel-container {
+      .cc-back-panel-inner-wrapper {
+        background-color: rgba(0, 0, 0, 90%);
+      }
+    }
+
+    .cc-front-panel-container,
+    .cc-back-panel-container {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background-image: url('/images/featured-components.png'); /* default image */
+      background-size: contain;
+      background-position: center top;
+      background-repeat: no-repeat;
+    }
+
+    &.cc-animation-type-flip {
+      .cc-flip-panel-inner-wrapper {
+        transform-style: preserve-3d;
+      }
+
+      .cc-inner-wrapper {
+        transform: translateY(-50%) translateZ(100px) scale(0.9);
+        perspective: inherit;
+      }
+
+      .cc-front-panel-container,
+      .cc-back-panel-container {
+        transform: rotateX(0) rotateY(0);
+        transform-style: preserve-3d;
+        transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+        backface-visibility: hidden;
+      }
+
+      &.cc-animation-direction-vertical {
+        .cc-back-panel-container {
+          transform: rotateX(-180deg) rotateY(0deg);
+        }
+      }
+
+      &.cc-animation-direction-horizontal {
+        .cc-back-panel-container {
+          transform: rotateX(0deg) rotateY(180deg);
+        }
+      }
+
+      &:hover {
+        &.cc-animation-direction-vertical {
+          .cc-flip-panel-inner-wrapper {
+            transform: rotateX(180deg) rotateY(0deg);
+          }
+
+          .cc-front-panel-container {
+            transform: rotateX(0deg);
+          }
+
+          .cc-back-panel-container {
+            transform: rotateX(-180deg);
+          }
+        }
+
+        &.cc-animation-direction-horizontal {
+          .cc-flip-panel-inner-wrapper {
+            transform: rotateX(0deg) rotateY(180deg);
+          }
+
+          .cc-front-panel-container {
+            transform: rotateY(0deg);
+          }
+
+          .cc-back-panel-container {
+            transform: rotateY(180deg);
+          }
+        }
+      }
+    }
+
+    &.cc-animation-type-fade {
+      .cc-inner-wrapper {
+        opacity: 1;
+        transition: opacity 0.4s ease-in-out;
+      }
+
+      .cc-back-panel-inner-wrapper {
+        opacity: 0;
+      }
+
+      &:hover {
+        .cc-front-panel-inner-wrapper {
+          opacity: 0;
+        }
+
+        .cc-back-panel-inner-wrapper {
+          opacity: 1;
+        }
+      }
+    }
+
+    &.cc-panel-shape-circle {
+      .cc-inner-wrapper {
+        border-radius: 100%;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+
+        .cc-content-wrapper {
+          padding: 50px;
+        }
+      }
+    }
+  }
+}

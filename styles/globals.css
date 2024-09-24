@@ -1,0 +1,29 @@
+/* stylelint-disable at-rule-no-unknown */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .text-edge-outline {
+    /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3); */
+  }
+}
+
+/* Custom global styles (optional) */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', Helvetica, Arial, Lucida, sans-serif;
+  color: #f1f1f1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

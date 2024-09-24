@@ -1,0 +1,18 @@
+.home-nav-links {
+  li {
+    margin: 0px 10px;
+    a {
+      border: 2px dotted;
+      border-radius: 24px;
+      padding: 8px 24px;
+      transition: 0.3s all ease-in-out;
+    }
+  }
+}
+
+a.ext-nav-link {
+  border: 2px dotted;
+  border-radius: 24px;
+  padding: 8px 24px;
+  transition: 0.3s all ease-in-out;
+}
