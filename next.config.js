@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   reactStrictMode: false,
   webpack(config) {
     config.module.rules.push({
