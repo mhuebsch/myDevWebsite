@@ -1,6 +1,13 @@
 {
+  "type": "module",
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "vercel-build": "next build"
+  },
+  "engines": {
+    "node": "22.9"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
