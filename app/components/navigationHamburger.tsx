@@ -9,7 +9,7 @@ export default function NavigationHamburger() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <div className="fixed top-8 left-8">
+    <div className="fixed top-8 left-8 z-10">
       <button
         className={`${styles.hamburger} ${isOpen ? styles.active : ''}`}
         onClick={toggleMenu}

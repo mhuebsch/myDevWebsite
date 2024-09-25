@@ -31,23 +31,23 @@ const FadeInWhenVisible = ({ children }) => {
 
 const WebsiteDesignsPage = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-screen max-w-[70%] lg:max-w-[1200px] mx-auto">
+    <div className="flex flex-col justify-center items-center h-screen w-screen max-w-full sm:max-w-[70%] lg:max-w-[1200px] mx-auto">
       <div className="min-h-screen">
         <div className="flex flex-col justify-center items-center w-full">
-          <h1 className="text-4xl text-center font-semibold animate-fade-in lowercase text-green-300 py-16">
+          <h1 className="text-4xl text-center font-semibold animate-fade-in lowercase text-green-300 pt-24 sm:py-16">
             Website Designs
           </h1>
-          <p className="w-3/5 text-center py-4">
+          <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center py-4">
             I have designed, developed, and maintained a wide range of websites,
             mostly WordPress sites and a few others with custom content
             management systems.
           </p>
-          <p className="w-3/5 text-center py-4">
+          <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center py-4">
             My experience spans from initial design and development to ongoing
             maintenance, search engine optimization, functionality, scalability,
             and user experience.
           </p>
-          <p className="w-3/5 text-center py-4">
+          <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center py-4">
             *These sites are all still active, but are now maintained within
             their own company.
           </p>
@@ -56,7 +56,7 @@ const WebsiteDesignsPage = () => {
         {/* Section 1 */}
         <Section>
           <FadeInWhenVisible>
-            <div className="w-full p-6">
+            <div className="w-full p-6 sm:p-12">
               <h2 className="text-3xl font-bold text-green-700">
                 Hailey Sault
               </h2>
@@ -97,7 +97,7 @@ const WebsiteDesignsPage = () => {
         {/* Section 2 */}
         <Section reverse>
           <FadeInWhenVisible>
-            <div className="p-12">
+            <div className="w-full p-6 sm:p-12">
               <h2 className="text-3xl font-bold text-green-700">
                 Community Action Duluth
               </h2>
@@ -139,7 +139,7 @@ const WebsiteDesignsPage = () => {
         {/* Section 3 */}
         <Section>
           <FadeInWhenVisible>
-            <div className="p-6">
+            <div className="w-full p-6 sm:p-12">
               <h2 className="text-3xl font-bold text-green-700">
                 CarePoint Health
               </h2>
@@ -180,7 +180,7 @@ const WebsiteDesignsPage = () => {
         {/* Section 4 */}
         <Section reverse>
           <FadeInWhenVisible>
-            <div className="p-12">
+            <div className="w-full p-6 sm:p-12">
               <h2 className="text-3xl font-bold text-green-700">
                 The Belive In Better Project
               </h2>

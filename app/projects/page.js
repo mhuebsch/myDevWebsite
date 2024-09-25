@@ -46,13 +46,13 @@ const ProjectsPage = () => {
   );
 
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-screen">
+    <div className="flex flex-col justify-start sm:justify-center items-center h-screen w-screen">
       <div className="flex flex-col justify-center items-center w-screen">
         <h1 className="text-4xl font-semibold lowercase text-green-300 py-16 animate-fade-in">
           Projects
         </h1>
-        <div className="flex flex-row">
-          <div className="flip-panel mx-10 w-full md:w-1/4 max-w-[395px] min-w-[395px] h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
+        <div className="flex flex-col sm:flex-row items-center">
+          <div className="flip-panel mx-10 my-6 sm:my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
             <FlipPanel
               frontContent={componentsFrontContent}
               backContent={componentsBackContent}
@@ -62,7 +62,7 @@ const ProjectsPage = () => {
             />
           </div>
 
-          <div className="flip-panel mx-10 w-full md:w-1/4 max-w-[395px] min-w-[395px] h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
+          <div className="flip-panel mx-10 my-6 sm:my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
             <FlipPanel
               frontContent={websitesFrontContent}
               backContent={websitesBackContent}

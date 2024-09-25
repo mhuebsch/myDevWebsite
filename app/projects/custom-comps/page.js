@@ -30,7 +30,7 @@ const FadeInWhenVisible = ({ children }) => {
 
 const CustomComponentsPage = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-screen max-w-[70%] lg:max-w-[1200px] mx-auto">
+    <div className="flex flex-col justify-center items-center h-screen w-screen max-w-full sm:max-w-[70%] lg:max-w-[1200px] mx-auto">
       <div className="min-h-screen">
         <div className="flex flex-col justify-center items-center w-full">
           <h1 className="text-4xl text-center font-semibold animate-fade-in lowercase text-green-300 py-16">
