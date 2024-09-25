@@ -31,6 +31,14 @@ export default function HomePage() {
           <ul className="flex flex-col sm:flex-row items-center justify-center gap-10 sm:gap-4">
             <li>
               <Link
+                href="/projects"
+                className="duration-500 text-green-300 hover:text-sky-400"
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="https://github.com/mhuebsch"
                 target="_blank"
                 className="duration-500 text-green-300 hover:text-sky-400"
@@ -48,10 +56,11 @@ export default function HomePage() {
             </li>
             <li>
               <Link
-                href="/projects"
+                href="https://www.linkedin.com/in/markhuebsch/"
+                target="_blank"
                 className="duration-500 text-green-300 hover:text-sky-400"
               >
-                Projects
+                LinkedIn
               </Link>
             </li>
           </ul>

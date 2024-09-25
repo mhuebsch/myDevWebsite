@@ -77,7 +77,7 @@ const CustomComponentsPage = () => {
                 custom settings
               </h2>
               <p className="mt-4 text-lg">
-                Every component includes custom settings based on the capbiliity
+                Every component includes custom settings based on the capability
                 of the component itself, as well as positioning, styling, and
                 accessibility options.
               </p>
