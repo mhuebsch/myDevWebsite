@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
+const linkClassName = "duration-500 text-green-300 hover:text-sky-400";
+
 function Header({ title }) {
   return (
     <header className="text-green-300 my-8 sm:my-16 uppercase text-center animate-fade-in-delayed tracking-wide">
@@ -32,7 +34,7 @@ export default function HomePage() {
             <li>
               <Link
                 href="/projects"
-                className="duration-500 text-green-300 hover:text-sky-400"
+                className={linkClassName}
               >
                 Projects
               </Link>
@@ -41,7 +43,7 @@ export default function HomePage() {
               <Link
                 href="https://github.com/mhuebsch"
                 target="_blank"
-                className="duration-500 text-green-300 hover:text-sky-400"
+                className={linkClassName}
               >
                 GitHub
               </Link>
@@ -49,7 +51,7 @@ export default function HomePage() {
             <li>
               <Link
                 href="/about"
-                className="duration-500 text-green-300 hover:text-sky-400"
+                className={linkClassName}
               >
                 About
               </Link>
@@ -58,9 +60,18 @@ export default function HomePage() {
               <Link
                 href="https://www.linkedin.com/in/markhuebsch/"
                 target="_blank"
-                className="duration-500 text-green-300 hover:text-sky-400"
+                className={linkClassName}
               >
                 LinkedIn
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/mark-huebsch-resume.pdf"
+                target="_blank"
+                className={linkClassName}
+              >
+                Resumé
               </Link>
             </li>
           </ul>
