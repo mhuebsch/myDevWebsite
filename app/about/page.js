@@ -1,3 +1,5 @@
+import ContactForm from 'app/components/contactForm';
+
 const AboutPage = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen max-w-full sm:max-w-[70%] lg:max-w-[1200px] mx-auto">
@@ -13,9 +15,10 @@ const AboutPage = () => {
             it.
           </p>
           <p className="w-full sm:w-2/5 px-8 sm:px-0 text-center py-10">
-            I reside in the mountains in Asheville, North Carolina and enjoy outdoor activities in my free
-            time. When I'm not coding or working, you'll often find me hiking,
-            camping, or spending time on a lake or river.
+            I reside in the mountains in Asheville, North Carolina and enjoy
+            outdoor activities in my free time. When I'm not coding or working,
+            you'll often find me hiking, camping, or spending time on a lake or
+            river.
           </p>
         </div>
       </div>

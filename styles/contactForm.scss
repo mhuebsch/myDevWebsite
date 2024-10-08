@@ -1,0 +1,129 @@
+$primary-color: #0d0d2b; // Deep space blue
+$secondary-color: #1f1f47; // Lighter space blue
+$glow-color: #00ffcc; // Neon green for glow effect
+$button-color: #111827; // Bright magenta for buttons
+$text-color: #ffffff; // White for text
+$placeholder-color: rgba(255, 255, 255, 0.6); // Light white for placeholders
+
+// body {
+//   font-family: 'Roboto', sans-serif;
+//   background: linear-gradient(120deg, $primary-color 0%, $secondary-color 100%);
+//   color: $text-color;
+//   height: 100vh;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+
+.contact-form {
+  form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 255, 204, 0.5);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -6px;
+      left: -6px;
+      right: -6px;
+      bottom: -6px;
+      background: linear-gradient(45deg, #111827, #00ffcc, #0080ff);
+      z-index: -1;
+      filter: blur(10px);
+      opacity: 0.5;
+    }
+
+    h2 {
+      color: $glow-color;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: $text-color;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+
+      &::placeholder {
+        color: $placeholder-color;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 15px $glow-color;
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+
+    button {
+      padding: 0.75rem 3rem;
+      background-color: $button-color;
+      color: $text-color;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: lighten($button-color, 6%);
+        transform: scale(1.05);
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(255, 0, 128, 0.5);
+      }
+    }
+
+    p {
+      margin-top: 1rem;
+      color: lighten($text-color, 20%);
+    }
+  }
+}
+
+// Optional: Add a starry background effect
+@keyframes moveStars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-1000px);
+  }
+}
+
+// .starry-background {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   z-index: -1;
+//   background: url('/path/to/starry-sky.png') repeat;
+//   opacity: 0.3;
+//   animation: moveStars 50s linear infinite;
+// }

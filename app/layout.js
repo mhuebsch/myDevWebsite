@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import '../styles/flipPanel.scss';
+import '../styles/contactForm.scss';
 import '../styles/globals.scss';
 import '../styles/navHamburger.module.scss';
 import NavigationHamburger from './components/navigationHamburger.tsx';
