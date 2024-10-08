@@ -58,6 +58,14 @@ export default function HomePage() {
             </li>
             <li>
               <Link
+                href="/contact"
+                className={linkClassName}
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="https://www.linkedin.com/in/markhuebsch/"
                 target="_blank"
                 className={linkClassName}
