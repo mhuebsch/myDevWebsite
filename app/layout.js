@@ -9,6 +9,9 @@ import Particles from './components/particles';
 export const metadata = {
   title: 'Mark Huebsch | Designer | Developer | Engineer',
   description: 'Mark Huebsch is an experienced front end specialist.',
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({ children }) {
