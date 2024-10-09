@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dev.markhuebsch.com
+
+# Sitemaps
+Sitemap: https://dev.markhuebsch.com/sitemap.xml
