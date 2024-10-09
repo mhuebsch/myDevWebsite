@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 
-const linkClassName = "duration-500 text-green-300 hover:text-sky-400";
+const linkClassName = 'duration-500 text-green-300 hover:text-sky-400';
+const listItemClassName = 'mb-1 sm:mb-8 mx-2';
 
 function Header({ title }) {
   return (
@@ -29,17 +30,14 @@ export default function HomePage() {
           mark huebsch
         </h1>
 
-        <nav className="home-nav-links my-4 sm:my-16 animate-fade-in-delayed">
-          <ul className="flex flex-col sm:flex-row items-center justify-center gap-10 sm:gap-4">
-            <li>
-              <Link
-                href="/projects"
-                className={linkClassName}
-              >
+        <nav className="home-nav-links my-4 sm:my-16 animate-fade-in-delayed w-full max-w-screen-sm sm:max-w-prose">
+          <ul className="flex flex-col flex-wrap sm:flex-row items-center justify-center gap-10 sm:gap-4 max-w-screen-sm">
+            <li className={listItemClassName}>
+              <Link href="/projects" className={linkClassName}>
                 Projects
               </Link>
             </li>
-            <li>
+            <li className={listItemClassName}>
               <Link
                 href="https://github.com/mhuebsch"
                 target="_blank"
@@ -48,23 +46,17 @@ export default function HomePage() {
                 GitHub
               </Link>
             </li>
-            <li>
-              <Link
-                href="/about"
-                className={linkClassName}
-              >
+            <li className={listItemClassName}>
+              <Link href="/about" className={linkClassName}>
                 About
               </Link>
             </li>
-            <li>
-              <Link
-                href="/contact"
-                className={linkClassName}
-              >
+            <li className={listItemClassName}>
+              <Link href="/contact" className={linkClassName}>
                 Contact
               </Link>
             </li>
-            <li>
+            <li className={listItemClassName}>
               <Link
                 href="https://www.linkedin.com/in/markhuebsch/"
                 target="_blank"
@@ -73,7 +65,7 @@ export default function HomePage() {
                 LinkedIn
               </Link>
             </li>
-            <li>
+            <li className={listItemClassName}>
               <Link
                 href="/mark-huebsch-resume.pdf"
                 target="_blank"
