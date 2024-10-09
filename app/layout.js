@@ -7,16 +7,16 @@ import NavigationHamburger from './components/navigationHamburger.tsx';
 import Particles from './components/particles';
 
 export const metadata = {
-  title: 'Mark Huebsch | Developer | Designer | Engineer',
+  title: 'Mark Huebsch | Developer | Designer | Engineer | Asheville, North Carolina',
   description:
-    'Mark Huebsch is a seasoned web developer and designer, specializing in creating dynamic, user-focused digital experiences. With over 15 years of expertise in front-end development and UI/UX design, Mark delivers innovative solutions that bridge design and technology.',
+    'Mark Huebsch is a seasoned web developer and designer in Asheville, North Carolina, specializing in creating dynamic, user-focused digital experiences. With over 15 years of expertise in front-end development and UI/UX design, Mark delivers innovative solutions that bridge design and technology.',
   icons: {
     icon: '/favicon.png',
   },
   openGraph: {
-    title: 'Mark Huebsch | Developer | Designer | Engineer',
+    title: 'Mark Huebsch | Developer | Designer | Engineer | Asheville, North Carolina',
     description:
-      'Mark Huebsch is a seasoned web developer and designer, specializing in creating dynamic, user-focused digital experiences. With over 15 years of expertise in front-end development and UI/UX design, Mark delivers innovative solutions that bridge design and technology.',
+      'Mark Huebsch is a seasoned web developer and designer in Asheville, North Carolina, specializing in creating dynamic, user-focused digital experiences. With over 15 years of expertise in front-end development and UI/UX design, Mark delivers innovative solutions that bridge design and technology.',
     url: 'https://dev.markhuebsch.com',
     images: [
       {
