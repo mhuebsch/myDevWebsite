@@ -14,7 +14,7 @@ export const metadata = {
     icon: '/favicon.png',
   },
   openGraph: {
-    title: 'Mark Huebsch | Designer | Developer | Engineer',
+    title: 'Mark Huebsch | Developer | Designer | Engineer',
     description:
       'Mark Huebsch is a seasoned web developer and designer, specializing in creating dynamic, user-focused digital experiences. With over 15 years of expertise in front-end development and UI/UX design, Mark delivers innovative solutions that bridge design and technology.',
     url: 'https://dev.markhuebsch.com',
