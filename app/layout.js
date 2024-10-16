@@ -5,16 +5,19 @@ import '../styles/globals.scss';
 import '../styles/navHamburger.module.scss';
 import NavigationHamburger from './components/navigationHamburger.tsx';
 import Particles from './components/particles';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
-  title: 'Mark Huebsch | Developer | Designer | Engineer | Asheville, North Carolina',
+  title:
+    'Mark Huebsch | Developer | Designer | Engineer | Asheville, North Carolina',
   description:
     'Mark Huebsch is a seasoned web developer and designer in Asheville, North Carolina, specializing in creating dynamic, user-focused digital experiences. With over 15 years of expertise in front-end development and UI/UX design, Mark delivers innovative solutions that bridge design and technology.',
   icons: {
     icon: '/favicon.png',
   },
   openGraph: {
-    title: 'Mark Huebsch | Developer | Designer | Engineer | Asheville, North Carolina',
+    title:
+      'Mark Huebsch | Developer | Designer | Engineer | Asheville, North Carolina',
     description:
       'Mark Huebsch is a seasoned web developer and designer in Asheville, North Carolina, specializing in creating dynamic, user-focused digital experiences. With over 15 years of expertise in front-end development and UI/UX design, Mark delivers innovative solutions that bridge design and technology.',
     url: 'https://dev.markhuebsch.com',
@@ -50,6 +53,7 @@ export default function RootLayout({ children }) {
         <meta name="twitter:image" content={metadata.twitter.image} />
       </head>
       <body>
+        <Analytics />
         <NavigationHamburger className="fixed" />
         <Particles
           className="bg-gradient-to-tl from-gray-900 via-green-800/60 to-gray-900 fixed inset-0 -z-10"
