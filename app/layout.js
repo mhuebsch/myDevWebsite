@@ -9,7 +9,7 @@ import { Analytics } from '@vercel/analytics/react';
 
 export const metadata = {
   title:
-    'Mark Huebsch | Developer | Designer | Engineer | Asheville, North Carolina',
+    'Mark Huebsch | Frontend Developer | Asheville, North Carolina',
   description:
     'Mark Huebsch is a seasoned web developer and designer in Asheville, North Carolina, specializing in creating dynamic, user-focused digital experiences. With over 15 years of expertise in front-end development and UI/UX design, Mark delivers innovative solutions that bridge design and technology.',
   icons: {
@@ -17,7 +17,7 @@ export const metadata = {
   },
   openGraph: {
     title:
-      'Mark Huebsch | Developer | Designer | Engineer | Asheville, North Carolina',
+      'Mark Huebsch | Frontend Developer | Asheville, North Carolina',
     description:
       'Mark Huebsch is a seasoned web developer and designer in Asheville, North Carolina, specializing in creating dynamic, user-focused digital experiences. With over 15 years of expertise in front-end development and UI/UX design, Mark delivers innovative solutions that bridge design and technology.',
     url: 'https://dev.markhuebsch.com',
