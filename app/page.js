@@ -24,7 +24,7 @@ export default function HomePage() {
       </div>
 
       <div className="sm:w-full md:w-9/12 flex flex-col items-center justify-center pb-16 sm:pb-0">
-        <Header title="Developer | Designer | Engineer" />
+        <Header title="Frontend Developer" />
 
         <h1 className="font-semibold lowercase py-3.5 px-0.5 z-10 text-3xl text-transparent duration-1000 bg-green-800 cursor-default text-edge-outline animate-title font-display sm:text-6xl xl:text-8xl whitespace-nowrap bg-clip-text ">
           mark huebsch
