@@ -66,12 +66,8 @@ export default function HomePage() {
               </Link>
             </li>
             <li className={listItemClassName}>
-              <Link
-                href="/mark-huebsch-resume.pdf"
-                target="_blank"
-                className={linkClassName}
-              >
-                Resumé
+              <Link href="/resume" className={linkClassName}>
+                Resume
               </Link>
             </li>
           </ul>
