@@ -2,7 +2,10 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./app/**/*.{js,ts,jsx,tsx}', './app/components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}',
+    './app/components/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {
       typography: {
@@ -33,6 +36,7 @@ export default {
       },
       animation: {
         title: 'title 3s ease-out forwards',
+        'slide-in-left': 'slideInLeft .6s ease-out',
         'fade-in': 'fade-in .6s ease-in-out both',
         'fade-in-delayed': 'fade-in 2s ease-in-out 2s both',
         'fade-left': 'fade-left 3s ease-in-out forwards',
@@ -70,6 +74,16 @@ export default {
           },
           '100%': {
             opacity: '0%',
+          },
+        },
+        slideInLeft: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(-150px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)',
           },
         },
         'fade-right': {
