@@ -7,7 +7,7 @@ const listItemClassName = 'mb-1 sm:mb-8 mx-2';
 function Header({ title }) {
   return (
     <header className="text-green-300 my-8 sm:my-16 uppercase text-center animate-fade-in-delayed tracking-wide">
-      <h1>{title ? title : 'Default title'}</h1>
+      <h1 className="text-xl">{title ? title : 'Default title'}</h1>
     </header>
   );
 }
