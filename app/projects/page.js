@@ -96,7 +96,7 @@ const ProjectsPage = () => {
   );
 
   return (
-    <div className="flex flex-col justify-start sm:justify-center items-center h-screen w-screen">
+    <div className="flex flex-col justify-start sm:justify-center items-center h-screen w-screen max-w-[1200px]">
       <div className="flex flex-col justify-center items-center w-screen">
         <h1 className="text-4xl font-semibold lowercase text-green-300 py-16 animate-fade-in">
           Projects
