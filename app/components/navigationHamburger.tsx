@@ -36,6 +36,9 @@ export default function NavigationHamburger() {
             <a href="/projects">Projects</a>
           </li>
           <li>
+            <a href="/resume">Resume</a>
+          </li>
+          <li>
             <a href="/contact">Contact</a>
           </li>
         </ul>
