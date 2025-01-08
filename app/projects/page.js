@@ -58,9 +58,38 @@ const ProjectsPage = () => {
   const interactivePresentationsBackContent = (
     <div className="flex flex-col justify-center items-center">
       <h4 className="font-medium text-sky-400">
-        Fully interactive presentations built with JavaScript, HTML, CSS, jQuery, and Bootstrap.
+        Fully interactive presentations built with JavaScript, HTML, CSS,
+        jQuery, and Bootstrap.
       </h4>
-      <a className="project-link mt-8" href="/projects/interactive-presentations/">
+      <a
+        className="project-link mt-8"
+        href="/projects/interactive-presentations/"
+      >
+        <ArrowRightIcon></ArrowRightIcon>
+      </a>
+    </div>
+  );
+
+  // Interactive Presentations Flip Panel
+  const rebuildRockyForkRoadFrontImage = '/images/screens-hailey-sault.png';
+  const rebuildRockyForkRoadBackImage = '/images/desktop-hailey-sault.png';
+
+  const rebuildRockyForkRoadFrontContent = (
+    <div>
+      <h2 className="text-xl text-green-300">Rebuild Rocky Fork Road</h2>
+    </div>
+  );
+
+  const rebuildRockyForkRoadBackContent = (
+    <div className="flex flex-col justify-center items-center">
+      <h4 className="font-medium text-sky-400">
+        Website created to raise community awareness and support for recovery
+        efforts after Hurricane Helene.
+      </h4>
+      <a
+        className="project-link mt-8"
+        href="#"
+      >
         <ArrowRightIcon></ArrowRightIcon>
       </a>
     </div>
@@ -99,6 +128,16 @@ const ProjectsPage = () => {
               backContent={interactivePresentationsBackContent}
               frontImage={interactivePresentationsFrontImage}
               backImage={interactivePresentationsBackImage}
+              className="cc-animation-type-flip cc-animation-direction-horizontal w-1/4 h-64"
+            />
+          </div>
+
+          <div className="flip-panel mx-10 my-6 sm:my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
+            <FlipPanel
+              frontContent={rebuildRockyForkRoadFrontContent}
+              backContent={rebuildRockyForkRoadBackContent}
+              frontImage={rebuildRockyForkRoadFrontImage}
+              backImage={rebuildRockyForkRoadBackImage}
               className="cc-animation-type-flip cc-animation-direction-horizontal w-1/4 h-64"
             />
           </div>
