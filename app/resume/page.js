@@ -55,7 +55,7 @@ const ResumePage = () => {
               </h3>
             </div>
             <div className="w-full md:w-3/4 p-4 space-y-4">
-              <h5 className="text-sm font-bold uppercase tracking-wider text-green-700">
+              <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
                 Software Engineer | Sportsdigita (2021 - 2024)
               </h5>
               <ul className="list-disc pl-5 space-y-2">
@@ -81,7 +81,7 @@ const ResumePage = () => {
                   improved compatibility.
                 </li>
               </ul>
-              <h5 className="text-sm font-bold uppercase tracking-wider text-green-700">
+              <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
                 Frontend Web Developer | Sportsdigita (2018 - 2021)
               </h5>
               <ul className="list-disc pl-5 space-y-2">
@@ -108,7 +108,7 @@ const ResumePage = () => {
                   streamlined project creation and enhanced user experience.
                 </li>
               </ul>
-              <h5 className="text-sm font-bold uppercase tracking-wider text-green-700">
+              <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
                 Web Developer & Digital Designer | HTK Marketing / Hailey Sault
                 (2015 - 2018)
               </h5>
@@ -126,12 +126,12 @@ const ResumePage = () => {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:flex-row mb-8">
             <div className="w-full md:w-1/4 p-4">
               <h3 className="text-3xl text-center font-semibold">Education</h3>
             </div>
             <div className="w-full md:w-3/4 p-4">
-              <p>University of Minnesota, Duluth</p>
+              <p className="font-bold">University of Minnesota, Duluth</p>
               <p>Bachelor of Fine Arts, Graphic Design | 2012</p>
             </div>
           </div>
