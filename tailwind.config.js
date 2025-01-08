@@ -37,6 +37,7 @@ export default {
       animation: {
         title: 'title 3s ease-out forwards',
         'slide-in-left': 'slideInLeft .6s ease-out',
+        'slide-in-right': 'slideInRight .6s ease-out',
         'fade-in': 'fade-in .6s ease-in-out both',
         'fade-in-delayed': 'fade-in 2s ease-in-out 2s both',
         'fade-left': 'fade-left 3s ease-in-out forwards',
@@ -80,6 +81,16 @@ export default {
           '0%': {
             opacity: '0',
             transform: 'translateX(-150px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateX(0)',
+          },
+        },
+        slideInRight: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateX(150px)',
           },
           '100%': {
             opacity: '1',

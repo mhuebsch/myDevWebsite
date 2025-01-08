@@ -17,7 +17,7 @@ const ResumePage = () => {
                 Frontend Developer
               </h5>
             </div>
-            <div className="w-full md:w-3/4 p-4 animate-fade-in">
+            <div className="w-full md:w-3/4 p-4 animate-slide-in-right">
               <p className="mb-4">
                 Mark Huebsch is a seasoned web developer and designer in
                 Asheville, North Carolina, specializing in creating dynamic,
@@ -32,13 +32,17 @@ const ResumePage = () => {
             <div className="w-full md:w-1/4 p-4 animate-slide-in-left">
               <h3 className="text-3xl font-semibold">Technical Skills</h3>
             </div>
-            <div className="w-full md:w-3/4 p-4 animate-fade-in space-y-4">
+            <div className="w-full md:w-3/4 p-4 animate-slide-in-right space-y-4">
               <ul className="list-disc pl-5 space-y-2">
                 <li>
-                  <strong>Strong—</strong> JavaScript, HTML, CSS/SCSS/LESS...
+                  <strong>Strong—</strong> JavaScript, HTML, CSS/SCSS/LESS,
+                  Adobe Creative Suite, WordPress, SEO, Responsive Web Design,
+                  UI/UX Design & Development
                 </li>
                 <li>
-                  <strong>Experienced—</strong> TypeScript, NodeJS...
+                  <strong>Experienced—</strong> TypeScript, NodeJS, ReactJS,
+                  NextJS, AngularJS, Git, Bootstrap, Tailwind CSS, JSON, jQuery,
+                  RESTful API, ES6
                 </li>
               </ul>
             </div>
@@ -50,22 +54,74 @@ const ResumePage = () => {
                 Professional Experience
               </h3>
             </div>
-            <div className="w-full md:w-3/4 p-4 animate-fade-in space-y-4">
+            <div className="w-full md:w-3/4 p-4 animate-slide-in-right space-y-4">
               <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
                 Software Engineer | Sportsdigita (2021 - 2024)
               </h5>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Played a key role in transforming...</li>
-                <li>Developed over 20 interactive plugins...</li>
-                <li>Converted legacy CommonJS modules...</li>
+                <li>
+                  Played a key role in transforming the design software of
+                  Sportsdigita’s flagship application, Digideck, from a
+                  code-based editing system into an interactive and
+                  user-friendly AngularJS based UI with RESTful APIs.
+                </li>
+                <li>
+                  Developed over 20 interactive presentation editing plugins
+                  using JavaScript, SCSS, and HTML with an in-house JavaScript
+                  framework that extended the Custom Web Component API. Each
+                  plugin is a self-contained application and includes features
+                  like flip panels, image sliders, video players, popup images,
+                  and image galleries. By applying SOLID and OOPS principles, I
+                  designed and implemented backend functionality, allowing users
+                  to customize settings for each plugin with an enhanced UX.
+                </li>
+                <li>
+                  Converted legacy CommonJS modules to ES6 modules to enable
+                  tree shaking and align with modern JavaScript practices with
+                  improved compatibility.
+                </li>
               </ul>
               <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
                 Frontend Web Developer | Sportsdigita (2018 - 2021)
               </h5>
               <ul className="list-disc pl-5 space-y-2">
-                <li>Led the onboarding design team...</li>
-                <li>Developed a custom animation library...</li>
-                <li>Developed custom templates...</li>
+                <li>
+                  Led the onboarding design team to develop and implement
+                  complex client projects by using JavaScript, jQuery, HTML,
+                  CSS, and Bootstrap. Delivered innovative solutions to meet
+                  intricate client requirements, enhancing platform
+                  functionality and driving software versatility.
+                </li>
+                <li>
+                  Developed a custom animation library with CSS and, after being
+                  promoted to the development team, set up JSON and helped
+                  develop a user-friendly interface in the AngularJS based
+                  platform. This upgrade allowed users to effortlessly select
+                  and customize animations and settings, eliminating the need
+                  for custom coding and significantly improving accessibility
+                  and usability.
+                </li>
+                <li>
+                  Developed custom templates for the Digideck platform,
+                  including single slides, various navigation styles, and
+                  complete presentation templates, establishing a standard that
+                  streamlined project creation and enhanced user experience.
+                </li>
+              </ul>
+              <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
+                Web Developer & Digital Designer | HTK Marketing / Hailey Sault
+                (2015 - 2018)
+              </h5>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>
+                  Initially hired as a Digital Designer, I was quickly promoted
+                  to Web Developer, where I managed all client websites. My
+                  responsibilities included setting up email campaigns,
+                  designing and developing microsites, and working with a
+                  variety of content management systems. For new site builds, I
+                  specialized in creating user-friendly solutions using
+                  WordPress.
+                </li>
               </ul>
             </div>
           </div>
@@ -74,7 +130,7 @@ const ResumePage = () => {
             <div className="w-full md:w-1/4 p-4 animate-slide-in-left">
               <h3 className="text-3xl text-center font-semibold">Education</h3>
             </div>
-            <div className="w-full md:w-3/4 p-4 animate-fade-in">
+            <div className="w-full md:w-3/4 p-4 animate-slide-in-right">
               <p className="font-bold">University of Minnesota, Duluth</p>
               <p>Bachelor of Fine Arts, Graphic Design | 2012</p>
             </div>
