@@ -1,8 +1,31 @@
 'use client';
 
 import Link from 'next/link';
-
+import { useState } from 'react';
 import { motion } from 'framer-motion';
+
+const [password, setPassword] = useState('');
+const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+const correctPassword = 'unlockify';
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  if (password === correctPassword) {
+    setIsAuthenticated(true);
+  } else {
+    alert('Incorrect password');
+  }
+};
+
+if (isAuthenticated) {
+  return (
+    <div>
+      <h1>Protected Content</h1>
+      <p>This content is only visible to users with the correct password.</p>
+    </div>
+  );
+}
 
 const Section = ({ children, reverse }) => {
   return (
@@ -32,6 +55,18 @@ const FadeInWhenVisible = ({ children }) => {
 const InteractivePresentationsPage = () => {
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen max-w-full sm:max-w-[70%] lg:max-w-[1200px] mx-auto">
+      <form onSubmit={handleSubmit}>
+        <label>
+          Password:
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+
       <div className="min-h-screen">
         <div className="flex flex-col justify-center items-center w-full">
           <h1 className="text-4xl text-center font-semibold animate-fade-in lowercase text-green-300 pt-24 sm:py-16">
@@ -43,10 +78,10 @@ const InteractivePresentationsPage = () => {
             Bootstrap.
           </p>
           <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center py-4">
-            They are all fully custom with varius integrations and
-            interactivity to meet each client's needs. Below are just some
-            examples of my favorites, as I built hundreds of these during my
-            first years at Sportsdigita.
+            They are all fully custom with varius integrations and interactivity
+            to meet each client's needs. Below are just some examples of my
+            favorites, as I built hundreds of these during my first years at
+            Sportsdigita.
           </p>
         </div>
 
