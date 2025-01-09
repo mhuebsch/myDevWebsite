@@ -23,10 +23,10 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center h-screen">
       <form
         onSubmit={handleSubmit}
-        className="p-6 bg-white shadow-md rounded-md"
+        className="p-6 shadow-md rounded-md"
       >
         <h1 className="text-2xl font-bold mb-4">Enter Password</h1>
         <label className="block mb-2">
@@ -35,12 +35,12 @@ const LoginPage = () => {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full p-2 border rounded mt-1"
+            className="w-full p-2 border rounded mt-1 text-black"
           />
         </label>
         <button
           type="submit"
-          className="w-full bg-green-500 text-white py-2 rounded mt-4"
+          className="w-full bg-green-500 py-2 rounded mt-4"
         >
           Submit
         </button>
