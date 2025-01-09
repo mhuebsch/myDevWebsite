@@ -1,74 +1,14 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 
-// Server-Side Rendering for Authentication
-export async function getServerSideProps(context) {
-  const { req } = context;
+const InteractivePresentationsPage = () => {
+  const Section = ({ children }) => (
+    <div className="flex flex-col md:flex-row items-center justify-between w-full py-10">
+      {children}
+    </div>
+  );
 
-  // Check for authentication cookie
-  const isAuthenticated = req.cookies.authenticated === 'true';
-
-  return {
-    props: {
-      isAuthenticated, // Pass authentication status to the page
-    },
-  };
-}
-
-const InteractivePresentationsPage = ({ isAuthenticated }) => {
-  const [password, setPassword] = useState('');
-  const [authenticated, setAuthenticated] = useState(isAuthenticated);
-  const [error, setError] = useState('');
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const response = await fetch('/api/validate-password', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ password }),
-    });
-
-    if (response.ok) {
-      setAuthenticated(true);
-      setError('');
-    } else {
-      setError('Invalid password');
-    }
-  };
-
-  if (!authenticated) {
-    return (
-      <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-        <form
-          onSubmit={handleSubmit}
-          className="p-6 bg-white shadow-md rounded-md"
-        >
-          <h1 className="text-2xl font-bold mb-4">Enter Password</h1>
-          <label className="block mb-2">
-            Password:
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              className="w-full p-2 border rounded mt-1"
-            />
-          </label>
-          <button
-            type="submit"
-            className="w-full bg-green-500 text-white py-2 rounded mt-4"
-          >
-            Submit
-          </button>
-          {error && <p className="text-red-500 mt-2">{error}</p>}
-        </form>
-      </div>
-    );
-  }
-
-  // Content for authenticated users
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen max-w-full sm:max-w-[70%] lg:max-w-[1200px] mx-auto">
       <div className="min-h-screen">
@@ -80,12 +20,6 @@ const InteractivePresentationsPage = ({ isAuthenticated }) => {
             These presentations were built in the Digideck, Sportsdigita's
             flagship application, using JavaScript, jQuery, HTML, CSS, and
             Bootstrap.
-          </p>
-          <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center py-4">
-            They are all fully custom with various integrations and
-            interactivity to meet each client's needs. Below are just some
-            examples of my favorites, as I built hundreds of these during my
-            first years at Sportsdigita.
           </p>
         </div>
 
@@ -109,11 +43,5 @@ const InteractivePresentationsPage = ({ isAuthenticated }) => {
     </div>
   );
 };
-
-const Section = ({ children }) => (
-  <div className="flex flex-col md:flex-row items-center justify-between w-full py-10">
-    {children}
-  </div>
-);
 
 export default InteractivePresentationsPage;
