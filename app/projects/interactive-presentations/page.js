@@ -57,7 +57,7 @@ const InteractivePresentationsPage = () => {
   // Main render return
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen max-w-full sm:max-w-[70%] lg:max-w-[1200px] mx-auto">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="absolute w-full h-full flex justify-center items-center bg-green-950">
         <label>
           Password:
           <input
