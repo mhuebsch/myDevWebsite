@@ -3,7 +3,7 @@
 import { useRef, useEffect } from 'react';
 
 const VideoComponent = ({ src, ...props }) => {
-  const videoRef = useRef(null); // Video ref to control the video element
+  const videoRef = useRef<HTMLVideoElement>(null); // Video ref to control the video element
 
   useEffect(() => {
     const videoElement = videoRef.current;
