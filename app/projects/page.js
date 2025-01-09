@@ -102,7 +102,7 @@ const ProjectsPage = () => {
           Projects
         </h1>
         <div className="flex flex-col flex-wrap sm:flex-row items-center justify-center">
-          <div className="m-3 flip-panel mx-10 my-6 sm:my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
+          <div className="flip-panel md:m-10 md:my-6 my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
             <FlipPanel
               frontContent={componentsFrontContent}
               backContent={componentsBackContent}
@@ -112,7 +112,7 @@ const ProjectsPage = () => {
             />
           </div>
 
-          <div className="m-3 flip-panel mx-10 my-6 sm:my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
+          <div className="flip-panel md:m-10 md:my-6 my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
             <FlipPanel
               frontContent={websitesFrontContent}
               backContent={websitesBackContent}
@@ -122,7 +122,7 @@ const ProjectsPage = () => {
             />
           </div>
 
-          <div className="m-3 flip-panel mx-10 my-6 sm:my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
+          <div className="flip-panel md:m-10 md:my-6 my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
             <FlipPanel
               frontContent={interactivePresentationsFrontContent}
               backContent={interactivePresentationsBackContent}
@@ -132,7 +132,7 @@ const ProjectsPage = () => {
             />
           </div>
 
-          <div className="m-3 flip-panel mx-10 my-6 sm:my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
+          <div className="flip-panel md:m-10 md:my-6 my-0 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black">
             <FlipPanel
               frontContent={rebuildRockyForkRoadFrontContent}
               backContent={rebuildRockyForkRoadBackContent}
