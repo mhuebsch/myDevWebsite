@@ -7,18 +7,28 @@ const LoginPage = () => {
   const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission (which triggers a GET request)
-
-    const response = await fetch('/api/validate-password', {
-      method: 'POST', // Ensure the method is set to POST
-      headers: { 'Content-Type': 'application/json' }, // Specify JSON content
-      body: JSON.stringify({ password }), // Send the password in the body
-    });
-
-    if (response.ok) {
-      window.location.href = '/projects/interactive-presentations';
-    } else {
-      setError('Invalid password');
+    e.preventDefault();
+  
+    console.log('Submitting password:', password); // Log the password being submitted
+  
+    try {
+      const response = await fetch('/api/validate-password', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password }),
+      });
+  
+      console.log('Response status:', response.status);
+  
+      if (response.ok) {
+        console.log('Password validated. Redirecting...');
+        window.location.href = '/projects/interactive-presentations';
+      } else {
+        console.log('Invalid password');
+        setError('Invalid password');
+      }
+    } catch (error) {
+      console.error('Error submitting password:', error);
     }
   };
 
