@@ -2,7 +2,7 @@ export default function handler(req, res) {
   if (req.method === 'POST') {
     const { password } = req.body;
 
-    const correctPassword = 'unlockify'; 
+    const correctPassword = 'unlockify';
 
     if (password === correctPassword) {
       res.setHeader(
