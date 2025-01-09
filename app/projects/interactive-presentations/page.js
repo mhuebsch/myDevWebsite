@@ -41,23 +41,13 @@ const InteractivePresentationsPage = () => {
     );
   };
 
-  const FadeInWhenVisible = ({ children }) => {
-    return (
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-      >
-        {children}
-      </motion.div>
-    );
-  };
-
   // Main render return
   return (
     <div className="flex flex-col justify-center items-center h-screen w-screen max-w-full sm:max-w-[70%] lg:max-w-[1200px] mx-auto">
-      <form onSubmit={handleSubmit} className="absolute w-full h-full flex justify-center items-center bg-green-950">
+      <form
+        onSubmit={handleSubmit}
+        className="absolute w-full h-full flex justify-center items-center bg-green-950"
+      >
         <label>
           Password:
           <input
@@ -88,43 +78,37 @@ const InteractivePresentationsPage = () => {
         </div>
 
         <Section>
-          <FadeInWhenVisible>
-            <div className="w-full p-6 sm:p-12">
-              <h2 className="text-3xl font-bold text-green-700">
-                Hailey Sault
-              </h2>
-              <p className="my-8 text-lg">
-                Hailey Sault (hay-lee-soo) is a marketing agency with expertise
-                focused on health care. test
-              </p>
-              <Link
-                href="https://haileysault.com/"
-                target="_blank"
-                className="text-green-300 hover:text-sky-400 ext-nav-link"
-              >
-                Visit Hailey Sault
-              </Link>
-            </div>
-          </FadeInWhenVisible>
+          <div className="w-full p-6 sm:p-12">
+            <h2 className="text-3xl font-bold text-green-700">Hailey Sault</h2>
+            <p className="my-8 text-lg">
+              Hailey Sault (hay-lee-soo) is a marketing agency with expertise
+              focused on health care. test
+            </p>
+            <Link
+              href="https://haileysault.com/"
+              target="_blank"
+              className="text-green-300 hover:text-sky-400 ext-nav-link"
+            >
+              Visit Hailey Sault
+            </Link>
+          </div>
 
-          <FadeInWhenVisible>
-            <div className="flex flex-row">
-              <div className="w-1/2 p-6 flex flew-col sm:flex-row justify-center">
-                <img
-                  src="/images/desktop-hailey-sault.png"
-                  alt="image of hailey sault website on dekstop computer"
-                  className="w-auto h-auto max-h-96 object-contain"
-                />
-              </div>
-              <div className="w-1/2 flex flew-col sm:flex-row justify-center">
-                <img
-                  src="/images/screens-hailey-sault.png"
-                  alt="image of hailey sault website on different screens"
-                  className="w-auto h-auto max-h-96 object-contain"
-                />
-              </div>
+          <div className="flex flex-row">
+            <div className="w-1/2 p-6 flex flew-col sm:flex-row justify-center">
+              <img
+                src="/images/desktop-hailey-sault.png"
+                alt="image of hailey sault website on dekstop computer"
+                className="w-auto h-auto max-h-96 object-contain"
+              />
             </div>
-          </FadeInWhenVisible>
+            <div className="w-1/2 flex flew-col sm:flex-row justify-center">
+              <img
+                src="/images/screens-hailey-sault.png"
+                alt="image of hailey sault website on different screens"
+                className="w-auto h-auto max-h-96 object-contain"
+              />
+            </div>
+          </div>
         </Section>
       </div>
     </div>
