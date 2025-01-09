@@ -8,7 +8,7 @@ export default function FlipPanel({
   backImage,
 }) {
   return (
-    <div className={`m-3 cc-flip-panel-container ${className}`}>
+    <div className={`cc-flip-panel-container ${className}`}>
       <div className="cc-flip-panel-inner-wrapper">
         <div
           className="cc-front-panel-container"
