@@ -7,11 +7,11 @@ export async function POST(req) {
     const response = NextResponse.json({ success: true });
     response.cookies.set('password', password, {
       httpOnly: true,
-      // secure: process.env.NODE_ENV === "production",
+      secure: process.env.NODE_ENV === "production",
       path: '/',
-      // domain: ".markhuebsch.com", 
+      domain: ".markhuebsch.com", 
       maxAge: 60,
-      // sameSite: "Lax",
+      sameSite: "Lax",
     });
     return response;
   }

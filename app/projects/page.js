@@ -46,8 +46,8 @@ const ProjectsPage = () => {
   );
 
   // Interactive Presentations Flip Panel
-  const interactivePresentationsFrontImage = '/images/screens-hailey-sault.png';
-  const interactivePresentationsBackImage = '/images/desktop-hailey-sault.png';
+  const interactivePresentationsFrontImage = '/images/bahrain-menu.png';
+  const interactivePresentationsBackImage = '/images/bahrain-menu.png';
 
   const interactivePresentationsFrontContent = (
     <div>
@@ -71,8 +71,8 @@ const ProjectsPage = () => {
   );
 
   // rebuildRockyForkRoad Flip Panel
-  const rebuildRockyForkRoadFrontImage = '/images/screens-hailey-sault.png';
-  const rebuildRockyForkRoadBackImage = '/images/desktop-hailey-sault.png';
+  const rebuildRockyForkRoadFrontImage = '/images/rockyfork.jpeg';
+  const rebuildRockyForkRoadBackImage = '/images/rockyfork-map.png';
 
   const rebuildRockyForkRoadFrontContent = (
     <div>
@@ -88,7 +88,8 @@ const ProjectsPage = () => {
       </h4>
       <a
         className="project-link mt-8"
-        href="#"
+        href="https://rebuildrockyforkroad.org/"
+        target="_blank"
       >
         <ArrowRightIcon></ArrowRightIcon>
       </a>
