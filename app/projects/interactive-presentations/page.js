@@ -1,6 +1,6 @@
-'use client';
-
 import Link from 'next/link';
+import { cookies } from 'next/headers';
+import { redirect } from 'next/navigation';
 
 const InteractivePresentationsPage = () => {
   const Section = ({ children }) => (
@@ -44,4 +44,13 @@ const InteractivePresentationsPage = () => {
   );
 };
 
-export default InteractivePresentationsPage;
+export default async function Page() {
+  const cookieStore = cookies();
+  const password = cookieStore.get('password');
+
+  if (password?.value !== process.env.SECRET_PASSWORD) {
+    redirect('/login');
+  }
+
+  return <InteractivePresentationsPage />;
+}

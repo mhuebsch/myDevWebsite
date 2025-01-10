@@ -2,28 +2,23 @@
 
 import { useState } from 'react';
 
-const LoginPage = () => {
+export default function LoginPage() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch('/api/validate-password', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password }),
-      });
+    const response = await fetch('/api/login', {
+      method: 'POST',
+      body: JSON.stringify({ password }),
+      headers: { 'Content-Type': 'application/json' },
+    });
 
-      if (response.ok) {
-        window.location.href = '/projects/interactive-presentations';
-      } else {
-        console.log('Invalid password');
-        setError('Invalid password');
-      }
-    } catch (error) {
-      console.error('Error submitting password:', error);
+    if (response.ok) {
+      window.location.href = '/projects/interactive-presentations';
+    } else {
+      setError('Invalid password. Please try again.');
     }
   };
 
@@ -47,6 +42,4 @@ const LoginPage = () => {
       </form>
     </div>
   );
-};
-
-export default LoginPage;
+}

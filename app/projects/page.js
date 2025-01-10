@@ -63,7 +63,7 @@ const ProjectsPage = () => {
       </h4>
       <a
         className="project-link mt-8"
-        href="/login"
+        href="/projects/interactive-presentations"
       >
         <ArrowRightIcon></ArrowRightIcon>
       </a>
