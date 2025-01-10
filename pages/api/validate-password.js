@@ -7,7 +7,7 @@ export default function handler(req, res) {
     if (password === correctPassword) {
       res.setHeader(
         'Set-Cookie',
-        'authenticated=true; Path=/; SameSite=None; HttpOnly; Max-Age=3600'
+        'authenticated=true; Path=/; SameSite=None; HttpOnly; Max-Age=60'
       );
       res.status(200).json({ success: true });
     } else {
