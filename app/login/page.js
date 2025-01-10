@@ -8,20 +8,15 @@ const LoginPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
-    console.log('Submitting password:', password); // Log the password being submitted
-  
+
     try {
       const response = await fetch('/api/validate-password', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ password }),
       });
-  
-      console.log('Response status:', response.status);
-  
+
       if (response.ok) {
-        console.log('Password validated. Redirecting...');
         window.location.href = '/projects/interactive-presentations';
       } else {
         console.log('Invalid password');

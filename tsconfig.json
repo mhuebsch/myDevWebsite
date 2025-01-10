@@ -23,8 +23,11 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/util/*": ["util/*"]
-    }
+      "@/util/*": [
+        "util/*"
+      ]
+    },
+    "strictNullChecks": true
   },
   "include": [
     "next-env.d.ts",
