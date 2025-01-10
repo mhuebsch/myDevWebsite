@@ -63,14 +63,14 @@ const ProjectsPage = () => {
       </h4>
       <a
         className="project-link mt-8"
-        href="/projects/interactive-presentations/"
+        href="/login"
       >
         <ArrowRightIcon></ArrowRightIcon>
       </a>
     </div>
   );
 
-  // Interactive Presentations Flip Panel
+  // rebuildRockyForkRoad Flip Panel
   const rebuildRockyForkRoadFrontImage = '/images/screens-hailey-sault.png';
   const rebuildRockyForkRoadBackImage = '/images/desktop-hailey-sault.png';
 
