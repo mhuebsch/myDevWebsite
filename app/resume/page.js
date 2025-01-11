@@ -71,7 +71,7 @@ const ResumePage = () => {
                   framework that extended the Custom Web Component API. Each
                   plugin is a self-contained application and includes features
                   like flip panels, image sliders, video players, popup images,
-                  and image galleries. By applying SOLID and OOPS principles, I
+                  and image galleries. While applying SOLID and OOPS principles, I
                   designed and implemented backend functionality, allowing users
                   to customize settings for each plugin with an enhanced UX.
                 </li>
