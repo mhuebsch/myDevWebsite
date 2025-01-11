@@ -46,8 +46,8 @@ const ProjectsPage = () => {
   );
 
   // Interactive Presentations Flip Panel
-  const interactivePresentationsFrontImage = '/images/bahrain-menu.png';
-  const interactivePresentationsBackImage = '/images/bahrain-menu.png';
+  const interactivePresentationsFrontImage = '/images/bahrain-menu.jpg';
+  const interactivePresentationsBackImage = '/images/bahrain-menu.jpg';
 
   const interactivePresentationsFrontContent = (
     <div>
