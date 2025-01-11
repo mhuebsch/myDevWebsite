@@ -4,6 +4,12 @@ import ArrowRightIcon from 'public/svgs/arrow-right.svg';
 const flipPanelWrapperClasses =
   'flip-panel md:mx-10 md:my-6 my-10 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black';
 
+const frontContentHeaderClasses = 'text-xl text-green-300';
+const backContentHeaderClasses = 'font-medium text-sky-400';
+
+const backContentWrapperClasses = 'flex flex-col justify-center items-center';
+const backContentLinkClasses = 'project-link mt-8';
+
 const ProjectsPage = () => {
   // Customizable Components Flip Panel
   const componentsFrontImage = '/images/featured-components.png';
@@ -11,17 +17,17 @@ const ProjectsPage = () => {
 
   const componentsFrontContent = (
     <div>
-      <h2 className="text-xl text-green-300">Customizable Components</h2>
+      <h2 className={frontContentHeaderClasses}>Customizable Components</h2>
     </div>
   );
 
   const componentsBackContent = (
-    <div className="flex flex-col justify-center items-center">
-      <h4 className="font-medium text-sky-400">
+    <div className={backContentWrapperClasses}>
+      <h4 className={backContentHeaderClasses}>
         Interactive, modular design tools used within an online presentation
         platform.
       </h4>
-      <a className="project-link mt-8" href="/projects/custom-comps/">
+      <a className={backContentLinkClasses} href="/projects/custom-comps/">
         <ArrowRightIcon></ArrowRightIcon>
       </a>
     </div>
@@ -33,16 +39,16 @@ const ProjectsPage = () => {
 
   const websitesFrontContent = (
     <div>
-      <h2 className="text-xl text-green-300">Website Designs</h2>
+      <h2 className={frontContentHeaderClasses}>Website Designs</h2>
     </div>
   );
 
   const websitesBackContent = (
-    <div className="flex flex-col justify-center items-center">
-      <h4 className="font-medium text-sky-400">
+    <div className={backContentWrapperClasses}>
+      <h4 className={backContentHeaderClasses}>
         Design, developement, and ongoing maintenance of numerous websites.
       </h4>
-      <a className="project-link mt-8" href="/projects/web-designs/">
+      <a className={backContentLinkClasses} href="/projects/web-designs/">
         <ArrowRightIcon></ArrowRightIcon>
       </a>
     </div>
@@ -54,18 +60,18 @@ const ProjectsPage = () => {
 
   const interactivePresentationsFrontContent = (
     <div>
-      <h2 className="text-xl text-green-300">Interactive Presentations</h2>
+      <h2 className={frontContentHeaderClasses}>Interactive Presentations</h2>
     </div>
   );
 
   const interactivePresentationsBackContent = (
-    <div className="flex flex-col justify-center items-center">
-      <h4 className="font-medium text-sky-400">
+    <div className={backContentWrapperClasses}>
+      <h4 className={backContentHeaderClasses}>
         Fully interactive presentations built with JavaScript, HTML, CSS,
         jQuery, and Bootstrap.
       </h4>
       <a
-        className="project-link mt-8"
+        className={backContentLinkClasses}
         href="/projects/interactive-presentations"
       >
         <ArrowRightIcon></ArrowRightIcon>
@@ -79,18 +85,18 @@ const ProjectsPage = () => {
 
   const rebuildRockyForkRoadFrontContent = (
     <div>
-      <h2 className="text-xl text-green-300">Rebuild Rocky Fork Road</h2>
+      <h2 className={frontContentHeaderClasses}>Rebuild Rocky Fork Road</h2>
     </div>
   );
 
   const rebuildRockyForkRoadBackContent = (
-    <div className="flex flex-col justify-center items-center">
-      <h4 className="font-medium text-sky-400">
+    <div className={backContentWrapperClasses}>
+      <h4 className={backContentHeaderClasses}>
         Website created to raise community awareness and support for recovery
         efforts after Hurricane Helene.
       </h4>
       <a
-        className="project-link mt-8"
+        className={backContentLinkClasses}
         href="https://rebuildrockyforkroad.org/"
         target="_blank"
       >
