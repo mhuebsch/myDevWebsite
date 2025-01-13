@@ -6,48 +6,48 @@ const InteractivePresentationsPage = () => {
   const videos = [
     {
       id: 1,
-      screenshot: '/images/desktop-believe-in-better.png',
-      video: '/videos/gameday-technologies-menu.mp4',
+      screenshot: '/images/digideck-cargill-showcase.png',
+      video: '/videos/digideck-cargill-showcase.mp4',
     },
     {
       id: 2,
-      screenshot: '/images/desktop-believe-in-better.png',
-      video: '/videos/gameday-technologies-menu.mp4',
+      screenshot: '/images/digideck-invnt.png',
+      video: '/videos/digideck-invnt.mp4',
     },
     {
       id: 3,
-      screenshot: '/images/desktop-believe-in-better.png',
-      video: '/videos/gameday-technologies-menu.mp4',
+      screenshot: '/images/digideck-gameday-technologies.png',
+      video: '/videos/digideck-gameday-technologies.mp4',
     },
     {
       id: 4,
-      screenshot: '/images/desktop-believe-in-better.png',
-      video: '/videos/gameday-technologies-menu.mp4',
+      screenshot: '/images/digideck-bahrain.png',
+      video: '/videos/digideck-bahrain.mp4',
     },
     {
       id: 5,
-      screenshot: '/images/desktop-believe-in-better.png',
-      video: '/videos/gameday-technologies-menu.mp4',
+      screenshot: '/images/digideck-dallas-stars.png',
+      video: '/videos/digideck-dallas-stars.mp4',
     },
     {
       id: 6,
-      screenshot: '/images/desktop-believe-in-better.png',
-      video: '/videos/gameday-technologies-menu.mp4',
+      screenshot: '/images/digideck-stlouis-city-sc.png',
+      video: '/videos/digideck-stlouis-city-sc.mp4',
     },
     {
       id: 7,
-      screenshot: '/images/desktop-believe-in-better.png',
-      video: '/videos/gameday-technologies-menu.mp4',
+      screenshot: '/images/digideck-sf-giants.png',
+      video: '/videos/digideck-sf-giants.mp4',
     },
     {
       id: 8,
-      screenshot: '/images/desktop-believe-in-better.png',
-      video: '/videos/gameday-technologies-menu.mp4',
+      screenshot: '/images/digideck-usa-cycling.png',
+      video: '/videos/digideck-usa-cycling.mp4',
     },
     {
       id: 9,
-      screenshot: '/images/desktop-believe-in-better.png',
-      video: '/videos/gameday-technologies-menu.mp4',
+      screenshot: '/images/digideck-sd-strike-force.png',
+      video: '/videos/digideck-sd-strike-force.mp4',
     },
   ];
 
