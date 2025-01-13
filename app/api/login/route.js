@@ -10,7 +10,7 @@ export async function POST(req) {
       secure: process.env.NODE_ENV === "production",
       path: '/',
       domain: ".markhuebsch.com", 
-      maxAge: 1060,
+      maxAge: 60,
       sameSite: "Lax",
     });
     return response;
