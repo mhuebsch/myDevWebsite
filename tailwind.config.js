@@ -42,6 +42,7 @@ export default {
         'fade-in-delayed': 'fade-in 2s ease-in-out 2s both',
         'fade-left': 'fade-left 3s ease-in-out forwards',
         'fade-right': 'fade-right 3s ease-in-out forwards',
+        growIn: 'growIn 0.6s ease-in-out forwards',
       },
       keyframes: {
         'fade-in': {
@@ -109,6 +110,20 @@ export default {
           },
           '100%': {
             opacity: '0%',
+          },
+        },
+        growIn: {
+          '0%': {
+            transform: 'scale(0)',
+            opacity: '0',
+          },
+          '80%': {
+            transform: 'scale(1.1)',
+            opacity: '1',
+          },
+          '100%': {
+            transform: 'scale(1)',
+            opacity: '1',
           },
         },
         title: {

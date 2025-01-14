@@ -8,46 +8,55 @@ const InteractivePresentationsPage = () => {
       id: 1,
       screenshot: '/images/digideck-cargill-showcase.png',
       video: '/videos/digideck-cargill-showcase.mp4',
+      animationClass: `animate-growIn`,
     },
     {
       id: 2,
       screenshot: '/images/digideck-invnt.png',
       video: '/videos/digideck-invnt.mp4',
+      animationClass: `animate-growIn delay-100`,
     },
     {
       id: 3,
       screenshot: '/images/digideck-gameday-technologies.png',
       video: '/videos/digideck-gameday-technologies.mp4',
+      animationClass: `animate-growIn`,
     },
     {
       id: 4,
       screenshot: '/images/digideck-bahrain.png',
       video: '/videos/digideck-bahrain.mp4',
+      animationClass: `animate-growIn delay-400`,
     },
     {
       id: 5,
       screenshot: '/images/digideck-dallas-stars.png',
       video: '/videos/digideck-dallas-stars.mp4',
+      animationClass: `animate-growIn delay-200`,
     },
     {
       id: 6,
       screenshot: '/images/digideck-stlouis-city-sc.png',
       video: '/videos/digideck-stlouis-city-sc.mp4',
+      animationClass: `animate-growIn delay-300`,
     },
     {
       id: 7,
       screenshot: '/images/digideck-sf-giants.png',
       video: '/videos/digideck-sf-giants.mp4',
+      animationClass: `animate-growIn delay-200`,
     },
     {
       id: 8,
       screenshot: '/images/digideck-usa-cycling.png',
       video: '/videos/digideck-usa-cycling.mp4',
+      animationClass: `animate-growIn delay-100`,
     },
     {
       id: 9,
       screenshot: '/images/digideck-sd-strike-force.png',
       video: '/videos/digideck-sd-strike-force.mp4',
+      animationClass: `animate-growIn delay-300`,
     },
   ];
 
@@ -85,11 +94,11 @@ const InteractivePresentationsPage = () => {
         </div>
 
         <div className="mt-6 mb-12 flex items-center justify-center">
-          <div className="pb-16 grid grid-cols-3 gap-4 max-w-screen-xl w-full">
+          <div className="p-6 md:pb-16 grid grid-cols-1 lg:grid-cols-3 gap-12 md:gap-6 max-w-screen-xl w-full">
             {videos.map((video) => (
               <div
                 key={video.id}
-                className="relative group w-full aspect-video bg-black overflow-hidden rounded-lg shadow-lg"
+                className={`${video.animationClass} relative group w-full aspect-video bg-black overflow-hidden rounded-lg shadow-lg`}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >
