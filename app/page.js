@@ -17,9 +17,9 @@ export default function HomePage() {
     <div className="flex mt-16 sm:mt-0 flex-col md:flex-row items-center justify-center w-screen px-10 max-w-full sm:max-w-[70%] lg:max-w-[1200px] mx-auto h-screen">
       <div className="sm:w-full md:w-3/12 mt-24 sm:mt-0 flex flex-col items-center justify-center animate-fade-in-delayed">
         <img
-          src="/images/headshot-me.png"
+          src="/images/mark-headshot-nobg.png"
           alt="headshot profile picture of mark huebsch"
-          className="w-auto h-auto max-h-96 object-contain rounded-full drop-shadow-lg"
+          className="w-auto h-auto max-h-96 object-contain rounded-full drop-shadow-lg border-[6px] border-double border-[#166534]"
         />
       </div>
 
