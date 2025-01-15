@@ -15,7 +15,7 @@ function Header({ title }) {
 export default function HomePage() {
   return (
     <div className="flex mt-16 sm:mt-0 flex-col md:flex-row items-center justify-center w-screen px-10 max-w-full sm:max-w-[70%] lg:max-w-[1200px] mx-auto h-screen">
-      <div className="px-6 mt-52 sm:w-full md:w-3/12 md:mt-0  flex flex-col items-center justify-center animate-fade-in-delayed">
+      <div className="px-6 sm:px-0 mt-52 sm:w-full md:w-3/12 md:mt-0  flex flex-col items-center justify-center animate-fade-in-delayed">
         <img
           src="/images/mark-headshot-nobg.png"
           alt="headshot profile picture of mark huebsch"
