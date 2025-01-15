@@ -66,19 +66,15 @@ const ResumePage = () => {
                   user-friendly AngularJS based UI with RESTful APIs.
                 </li>
                 <li>
-                  Developed over 20 interactive presentation editing plugins
-                  using JavaScript, SCSS, and HTML with an in-house JavaScript
-                  framework that extended the Custom Web Component API. Each
-                  plugin is a self-contained application and includes features
-                  like flip panels, image sliders, video players, popup images,
-                  and image galleries. While applying SOLID and OOPS principles, I
-                  designed and implemented backend functionality, allowing users
-                  to customize settings for each plugin with an enhanced UX.
+                  Developed 20+ interactive presentation editing plugins using
+                  JavaScript, SCSS, and HTML, integrating features like flip
+                  panels, image sliders, and video players with a focus on SOLID
+                  and OOPS principles.
                 </li>
                 <li>
-                  Converted legacy CommonJS modules to ES6 modules to enable
-                  tree shaking and align with modern JavaScript practices with
-                  improved compatibility.
+                  Converted legacy CommonJS modules to ES6 modules to improve
+                  compatibility and enable tree shaking in accordance with
+                  modern JavaScript practices.
                 </li>
               </ul>
               <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
