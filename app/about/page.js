@@ -16,9 +16,9 @@ const AboutPage = () => {
           </p>
           <p className="w-full sm:w-2/5 px-8 sm:px-0 text-center py-10">
             I reside in the mountains in Asheville, North Carolina and enjoy
-            outdoor activities in my free time. When I'm not coding or working,
-            you'll often find me hiking, camping, or spending time on a lake or
-            river.
+            outdoor activities in my free time. When I'm not coding or
+            designing, you'll often find me hiking, camping, or spending time on
+            a lake or river.
           </p>
         </div>
       </div>
