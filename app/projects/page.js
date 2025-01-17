@@ -2,7 +2,7 @@ import FlipPanel from 'app/components/flipPanel';
 import ArrowRightIcon from 'public/svgs/arrow-right.svg';
 
 const flipPanelWrapperClasses =
-  'flip-panel md:mx-10 md:my-6 my-10 w-4/5 sm:w-full md:w-1/4 max-w-[395px] min-w-[300px] sm:min-w-[395px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black';
+  'flip-panel md:mx-6 md:my-6 my-10 w-4/5 sm:w-full md:w-1/4 max-w-[350px] min-w-[300px] sm:min-w-[350px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black';
 
 const frontContentHeaderClasses = 'text-xl text-green-300';
 const backContentHeaderClasses = 'font-medium text-sky-400';
