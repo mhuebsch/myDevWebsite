@@ -105,6 +105,32 @@ const ProjectsPage = () => {
     </div>
   );
 
+  // giveWithEveryPurchase Flip Panel
+  const giveWithEveryPurchaseFrontImage = '/images/give-with-every-purchase-shirts.png';
+  const giveWithEveryPurchaseBackImage = '/images/give-with-every-purchase-home.png';
+
+  const giveWithEveryPurchaseFrontContent = (
+    <div>
+      <h2 className={frontContentHeaderClasses}>Give with Every Purchase</h2>
+    </div>
+  );
+
+  const giveWithEveryPurchaseBackContent = (
+    <div className={backContentWrapperClasses}>
+      <h4 className={backContentHeaderClasses}>
+        Website created to give a portion of every sale to nonprofits and artist
+        with every purchase.
+      </h4>
+      <a
+        className={backContentLinkClasses}
+        href="https://www.givewitheverypurchase.com/"
+        target="_blank"
+      >
+        <ArrowRightIcon></ArrowRightIcon>
+      </a>
+    </div>
+  );
+
   return (
     <div className="flex flex-col justify-start m-auto sm:justify-center items-center w-full max-w-[1200px]">
       <div className="flex flex-col flex-wrap justify-center items-center">
@@ -148,6 +174,16 @@ const ProjectsPage = () => {
               backContent={rebuildRockyForkRoadBackContent}
               frontImage={rebuildRockyForkRoadFrontImage}
               backImage={rebuildRockyForkRoadBackImage}
+              className="cc-animation-type-flip cc-animation-direction-horizontal w-1/4 h-64"
+            />
+          </div>
+
+          <div className={flipPanelWrapperClasses}>
+            <FlipPanel
+              frontContent={giveWithEveryPurchaseFrontContent}
+              backContent={giveWithEveryPurchaseBackContent}
+              frontImage={giveWithEveryPurchaseFrontImage}
+              backImage={giveWithEveryPurchaseBackImage}
               className="cc-animation-type-flip cc-animation-direction-horizontal w-1/4 h-64"
             />
           </div>
