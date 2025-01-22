@@ -37,10 +37,10 @@ const CustomComponentsPage = () => {
             Customizable Components
           </h1>
           <p className="w-3/4 text-center">
-            With this project, I developed 20+ custom components with
-            extensive configuration options. I created these from the ground up
-            using primarily vanilla JavaScript, HTML, and SASS, ensuring
-            seamless integration with an AngularJS-based software platform.
+            With this project, I developed 20+ custom components with extensive
+            configuration options. I created these from the ground up using
+            primarily vanilla JavaScript, HTML, and SASS, ensuring seamless
+            integration with an AngularJS-based software platform.
           </p>
         </div>
 
@@ -100,7 +100,12 @@ const CustomComponentsPage = () => {
               </h2>
               <p className="mt-4 text-lg">
                 Ultimately, the components deliver a distinctive, compelling,
-                and visually impressive presentation.
+                and visually impressive interactive presentation.
+              </p>
+              <p>
+                <a href="/projects/interactive-presentations">
+                  Click here for a few interactive presentation examples.
+                </a>
               </p>
             </div>
           </FadeInWhenVisible>

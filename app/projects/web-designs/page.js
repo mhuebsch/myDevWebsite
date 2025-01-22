@@ -37,17 +37,17 @@ const WebsiteDesignsPage = () => {
           <h1 className="text-4xl text-center font-semibold animate-fade-in lowercase text-green-300 pt-24 sm:py-16">
             Website Designs
           </h1>
-          <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center py-4">
+          <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center">
             I have designed, developed, and maintained a wide range of websites,
             mostly WordPress sites and a few others with custom content
             management systems.
           </p>
-          <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center py-4">
+          <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center">
             My experience spans from initial design and development to ongoing
             maintenance, search engine optimization, functionality, scalability,
             and user experience.
           </p>
-          <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center py-4">
+          <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center">
             *These sites are all still active, but are now maintained within
             their own company.
           </p>
