@@ -34,7 +34,7 @@ const WebsiteDesignsPage = () => {
     <div className="flex flex-col justify-center items-center h-auto w-full max-w-screen-xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
       <div className="min-h-screen">
         <div className="flex flex-col justify-center items-center w-full">
-          <h1 className="text-4xl text-center font-semibold animate-fade-in lowercase text-green-300 pt-24 sm:py-16">
+          <h1 className="text-4xl text-center font-semibold animate-fade-in lowercase text-green-300 pb-8 pt-24 sm:py-16">
             Website Designs
           </h1>
           <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center">
