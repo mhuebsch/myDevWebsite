@@ -9,7 +9,7 @@ const ResumePage = () => {
         </div>
       </div>
       <section>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 px-4 md:px-0 lg:px-14">
           <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/4 p-4 animate-slide-in-left">
               <h3 className="text-3xl font-semibold">Mark Huebsch</h3>
