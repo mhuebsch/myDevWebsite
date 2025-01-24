@@ -9,7 +9,7 @@ const Section = ({ children, reverse }) => {
     <div
       className={`flex flex-col md:flex-row ${
         reverse ? 'md:flex-row-reverse' : 'md:flex-row'
-      } items-center justify-between w-full py-10`}
+      } items-center justify-between w-full px-4 sm:px-6 md:px-8 py-8 justify-self-center`}
     >
       {children}
     </div>
@@ -31,7 +31,7 @@ const FadeInWhenVisible = ({ children }) => {
 
 const WebsiteDesignsPage = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen w-screen max-w-full sm:max-w-[70%] lg:max-w-[1200px] mx-auto">
+    <div className="flex flex-col justify-center items-center h-auto w-full max-w-screen-xl px-4 sm:px-6 md:px-8 lg:px-12 mx-auto">
       <div className="min-h-screen">
         <div className="flex flex-col justify-center items-center w-full">
           <h1 className="text-4xl text-center font-semibold animate-fade-in lowercase text-green-300 pt-24 sm:py-16">
