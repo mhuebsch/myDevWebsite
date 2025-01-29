@@ -39,7 +39,7 @@ const WebsiteDesignsPage = () => {
           </h1>
           <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center">
             I have designed, developed, and maintained a wide range of websites,
-            mostly WordPress sites and a few others with custom content
+            mostly WordPress sites and a few others with various content
             management systems.
           </p>
           <p className="w-full px-8 sm:px-0 sm:w-3/5 text-center">
