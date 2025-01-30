@@ -42,7 +42,7 @@ const ResumePage = () => {
                 <li>
                   <strong>Experienced—</strong> TypeScript, NodeJS, ReactJS,
                   NextJS, AngularJS, Git, Bootstrap, Tailwind CSS, JSON, jQuery,
-                  RESTful API, ES6
+                  RESTful API, ES6, MongoDB
                 </li>
               </ul>
             </div>
