@@ -1,14 +1,24 @@
 'use client';
 
-export default function FlipPanel({
+interface FlipPanelProps {
+  className?: string;
+  frontContent?: React.ReactNode;
+  backContent?: React.ReactNode;
+  frontImage?: string;
+  backImage?: string;
+  onClick?: () => void;
+}
+
+const FlipPanel = ({
   className = '',
-  frontContent,
-  backContent,
-  frontImage,
-  backImage,
-}) {
+  frontContent = '',
+  backContent = '',
+  frontImage = '',
+  backImage = '',
+  onClick = () => {},
+}: FlipPanelProps) => {
   return (
-    <div className={`cc-flip-panel-container ${className}`}>
+    <div className={`cc-flip-panel-container ${className}`} onClick={onClick}>
       <div className="cc-flip-panel-inner-wrapper">
         <div
           className="cc-front-panel-container"
@@ -33,4 +43,6 @@ export default function FlipPanel({
       </div>
     </div>
   );
-}
+};
+
+export default FlipPanel;
