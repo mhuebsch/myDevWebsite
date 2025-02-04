@@ -56,7 +56,7 @@ const ResumePage = () => {
             </div>
             <div className="w-full md:w-3/4 p-4 animate-slide-in-right space-y-4">
               <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
-                Software Engineer | Sportsdigita (2021 - 2024)
+                Software Engineer | Sportsdigita (Jan 2022 - Dec 2024)
               </h5>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
@@ -78,7 +78,7 @@ const ResumePage = () => {
                 </li>
               </ul>
               <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
-                Frontend Web Developer | Sportsdigita (2018 - 2021)
+                Frontend Web Developer | Sportsdigita (Oct 2018 - Dec 2021)
               </h5>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
@@ -106,7 +106,7 @@ const ResumePage = () => {
               </ul>
               <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
                 Web Developer & Digital Designer | HTK Marketing / Hailey Sault
-                (2015 - 2018)
+                (Nov 2015 - Oct 2018)
               </h5>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
