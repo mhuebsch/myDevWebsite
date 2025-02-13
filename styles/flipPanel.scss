@@ -1,4 +1,7 @@
 .flip-panel {
+
+  will-change: opacity, transform;
+  
   // arrow links
   .project-link {
     svg {

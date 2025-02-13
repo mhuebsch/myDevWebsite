@@ -116,14 +116,14 @@ export const scrollSlideLeft = (element) => {
 export const staggerFadeInScale = (elements) => {
   gsap.fromTo(
     elements,
-    { opacity: 0, y: 50, scale: 0 },
+    { autoAlpha: 0, y: 50, scale: 0 },
     {
-      opacity: 1,
+      autoAlpha: 1,
       y: 0,
       scale: 1,
-      duration: 1,
-      stagger: 0.2,
-      ease: 'power2.out',
+      duration: 1.2,
+      stagger: 0.15,
+      ease: 'power1.inOut',
     }
   );
 };
