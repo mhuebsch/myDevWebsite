@@ -40,9 +40,9 @@ const ResumePage = () => {
                   UI/UX Design & Development
                 </li>
                 <li>
-                  <strong>Experienced—</strong> TypeScript, Webpack, NodeJS, ReactJS,
-                  NextJS, AngularJS, Git, Bootstrap, Tailwind CSS, JSON, jQuery,
-                  RESTful API, ES6, MongoDB
+                  <strong>Experienced—</strong> TypeScript, Webpack, NodeJS,
+                  ReactJS, NextJS, AngularJS, Git, Bootstrap, Tailwind CSS,
+                  JSON, jQuery, RESTful API, ES6, MongoDB
                 </li>
               </ul>
             </div>
@@ -55,6 +55,36 @@ const ResumePage = () => {
               </h3>
             </div>
             <div className="w-full md:w-3/4 p-4 animate-slide-in-right space-y-4">
+              <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
+                Software Engineer | Enpira (Feb 2025 - Present)
+              </h5>
+              <ul className="list-disc pl-5 space-y-2">
+                <li>
+                  Lead the modernization of Enpira’s energy analytics platform
+                  by developing a fully interactive, data-driven web application
+                  using React, TypeScript, MUI, C3.js, and Plotly.js.
+                </li>
+                <li>
+                  Architect and implement a scalable front-end framework that
+                  replaces legacy jQuery and Django templates with modern,
+                  component-based React architecture.
+                </li>
+                <li>
+                  Design and develop advanced data visualization components and
+                  interactive control panels to analyze facility-level energy
+                  and water usage in real time.
+                </li>
+                <li>
+                  Collaborate closely with product and backend teams to
+                  integrate APIs, improve performance, and enhance the overall
+                  user experience.
+                </li>
+                <li>
+                  Apply modern best practices for maintainability, modularity,
+                  and UX consistency across a large, multi-tab application.
+                </li>
+              </ul>
+
               <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
                 Software Engineer | Sportsdigita (Jan 2022 - Dec 2024)
               </h5>
