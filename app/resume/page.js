@@ -56,7 +56,7 @@ const ResumePage = () => {
             </div>
             <div className="w-full md:w-3/4 p-4 animate-slide-in-right space-y-4">
               <h5 className="text-lg font-bold uppercase tracking-wider text-green-300">
-                Software Engineer | Enpira (Feb 2025 - Present)
+                Front End Developer | Enpira (Feb 2025 - Present)
               </h5>
               <ul className="list-disc pl-5 space-y-2">
                 <li>
