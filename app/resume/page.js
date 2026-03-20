@@ -21,7 +21,7 @@ const ResumePage = () => {
               <p className="mb-4">
                 Mark Huebsch is a seasoned web developer and designer in
                 Asheville, North Carolina, specializing in creating dynamic,
-                user-focused digital experiences. With over 15 years of
+                user-focused digital experiences. With over 17 years of
                 expertise in front-end development and UI/UX design, Mark
                 delivers innovative solutions that bridge design and technology.
               </p>
