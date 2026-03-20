@@ -35,13 +35,13 @@ const ResumePage = () => {
             <div className="w-full md:w-3/4 p-4 animate-slide-in-right space-y-4">
               <ul className="list-disc pl-5 space-y-2">
                 <li>
-                  <strong>Strong—</strong> JavaScript, HTML, CSS/SCSS/LESS,
+                  <strong>Strong—</strong> React, JavaScript, HTML, CSS/SCSS/LESS, MUI, C3.js, Plotly.js,
                   Adobe Creative Suite, WordPress, SEO, Responsive Web Design,
                   UI/UX Design & Development
                 </li>
                 <li>
                   <strong>Experienced—</strong> TypeScript, Webpack, NodeJS,
-                  ReactJS, NextJS, AngularJS, Git, Bootstrap, Tailwind CSS,
+                  NextJS, AngularJS, Git, Bootstrap, Tailwind CSS,
                   JSON, jQuery, RESTful API, ES6, MongoDB
                 </li>
               </ul>

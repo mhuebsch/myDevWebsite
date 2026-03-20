@@ -25,7 +25,7 @@ const AboutPage = () => {
           </h1>
           <p ref={para1Ref} className="w-full sm:w-2/5 px-8 sm:px-0 text-center opacity-0">
             My name is Mark Huebsch (Hipsh). I’ve been designing and programming
-            websites and web-based applications for 15+ years now. I thoroughly
+            websites and web-based applications for 17+ years now. I thoroughly
             enjoy what I do and am grateful that I’m able to make a career of
             it.
           </p>
