@@ -36,16 +36,16 @@ export const projectSummaries: ProjectSummary[] = [
 		frontImage: '/images/bahrain-menu.jpg',
 		backImage: '/images/bahrain-menu.jpg',
 	},
-	{
-		id: 'rebuild-rocky-fork-road',
-		title: 'Rebuild Rocky Fork Road',
-		description:
-			'Website created to raise community awareness and support for recovery efforts after Hurricane Helene.',
-		href: 'https://rebuildrockyforkroad.org/',
-		frontImage: '/images/rockyfork.jpeg',
-		backImage: '/images/rockyfork-map.png',
-		isExternal: true,
-	},
+	// {
+	// 	id: 'rebuild-rocky-fork-road',
+	// 	title: 'Rebuild Rocky Fork Road',
+	// 	description:
+	// 		'Website created to raise community awareness and support for recovery efforts after Hurricane Helene.',
+	// 	href: 'https://rebuildrockyforkroad.org/',
+	// 	frontImage: '/images/rockyfork.jpeg',
+	// 	backImage: '/images/rockyfork-map.png',
+	// 	isExternal: true,
+	// },
 	{
 		id: 'give-with-every-purchase',
 		title: 'Give with Every Purchase',

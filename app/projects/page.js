@@ -6,7 +6,9 @@ import { projectSummaries } from './projects.data';
 import { staggerFadeInScale } from '@/util/gsapAnimations';
 
 const projectTileWrapperClassName =
-	'flip-panel md:mx-6 md:my-6 my-10 w-4/5 sm:w-full md:w-1/4 max-w-[350px] min-w-[300px] sm:min-w-[350px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black opacity-0 scale-0';
+	'flip-panel my-10 w-4/5 sm:w-full max-w-[350px] min-w-[300px] sm:min-w-[350px] h-56 sm:h-64 rounded-lg border-dotted border-2 border-green-300 bg-gradient-to-tl from-black via-green-950/30 to-black opacity-0 scale-0';
+const projectGridClassName =
+	'grid w-full max-w-[840px] grid-cols-1 place-items-center gap-x-12 sm:grid-cols-2';
 
 const ProjectsPage = () => {
 	const projectTileRefs = useRef([]);
@@ -29,7 +31,7 @@ const ProjectsPage = () => {
 				<h1 className='text-4xl font-semibold lowercase text-green-300 py-16 animate-fade-in'>
 					Projects
 				</h1>
-				<div className='flex flex-col flex-wrap sm:flex-row items-center justify-center'>
+				<div className={projectGridClassName}>
 					{projectSummaries.map((project, index) => (
 						<div
 							key={project.id}
