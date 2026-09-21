@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import ProjectFlipTile from 'app/components/projectFlipTile';
+import ProjectFlipTile from '@/app/components/projectFlipTile';
 import { projectSummaries } from './projects.data';
 import { staggerFadeInScale } from '@/util/gsapAnimations';
 

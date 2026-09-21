@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import ArrowRightIcon from 'public/svgs/arrow-right.svg';
+import ArrowRightIcon from '@/public/svgs/arrow-right.svg';
 import FlipPanel from './flipPanel';
 
 const panelClassName =

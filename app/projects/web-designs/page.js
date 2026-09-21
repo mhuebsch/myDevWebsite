@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import VideoComponent from 'app/components/videoPlayer';
+import VideoComponent from '@/app/components/videoPlayer';
 import Link from 'next/link';
 
 const Section = ({ children, reverse }) => {
