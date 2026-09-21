@@ -53,7 +53,7 @@ export default function HomePage() {
             </li>
             <li className={listItemClassName}>
               <Link href="/contact" className={linkClassName}>
-                Contactt
+                Contact
               </Link>
             </li>
             <li className={listItemClassName}>
